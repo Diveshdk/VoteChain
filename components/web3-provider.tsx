@@ -30,7 +30,7 @@ const Web3Context = createContext<Web3ContextType>({
 
 export const useWeb3 = () => useContext(Web3Context)
 
-const CONTRACT_ADDRESS = "0x342a21a6414f0a1083dba3c8cec5328b75f2786b" // Replace with your contract address
+const CONTRACT_ADDRESS = "" // Replace with your contract address
 
 export function Web3Provider({ children }: { children: React.ReactNode }) {
   const [provider, setProvider] = useState<ethers.BrowserProvider | null>(null)
